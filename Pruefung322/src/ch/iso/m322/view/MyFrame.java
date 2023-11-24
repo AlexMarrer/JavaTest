@@ -53,7 +53,7 @@ public class MyFrame extends JFrame {
 		final JPanel contentLeft = new JPanel(new BorderLayout(0, 0));
 		contentLeft.setBackground(new Color(255, 255, 255));
 
-		DefaultListModel<String> listModel = new DefaultListModel<>();
+		final DefaultListModel<String> listModel = new DefaultListModel<>();
 		Iterator<Eintrag> data = new EintragLoader();
 		while (data.hasNext()) {
 		    Eintrag eintrag = data.next();
